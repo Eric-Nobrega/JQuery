@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--JQuery CDN-->
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <!--Script-->
+    <script defer src="app.js"></script>
+    <title>Stock Screener</title>
+  </head>
+  <body style="background-color: rgb(59, 60, 60)">
+    <div class="container-fluid text-center">
+      <h1 class="display-4 text-white">API Stock Screener</h1>
+      <div class="container w-50">
+        <div class="input-group">
+          <input
+            type="search"
+            class="form-control rounded mx-2"
+            placeholder="Enter A Stock Ticker"
+            aria-label="Search"
+            aria-describedby="search-addon"
+            id="user-input-search"
+          />
+          <input
+            type="date"
+            class="form-control rounded mx-2"
+            placeholder="Enter A Start Date"
+            aria-label="Search"
+            aria-describedby="search-addon"
+            id="start-date"
+          />
+          <input
+            type="date"
+            class="form-control rounded mx-2"
+            placeholder="Enter A End Date"
+            aria-label="Search"
+            aria-describedby="search-addon"
+            id="end-date"
+          />
+          <button
+            type="button"
+            class="btn btn-outline-primary mx-2"
+            id="user-input-button"
+          >
+            search
+          </button>
+        </div>
+        <ul
+          class="list-group d-flex justify-content-center"
+          id="result-container"
+        ></ul>
+      </div>
+    </div>
+  </body>
+</html>
