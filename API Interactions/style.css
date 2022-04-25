@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+.li-id {
+  margin-bottom: 15px;
+  border-bottom: solid 2px white;
+}
+
+.li-body {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
